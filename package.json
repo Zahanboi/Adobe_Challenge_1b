@@ -1,0 +1,16 @@
+{
+  "name": "adobe_challenge_1b",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "@xenova/transformers": "latest",
+    "pdf-parse": "^1.1.1"
+  }
+}
