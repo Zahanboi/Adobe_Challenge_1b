@@ -24,7 +24,7 @@ const getCollectionFolders = (basePath) =>
     const inputPath = path.join(collectionPath, 'challenge1b_input.json');
 
     if (!fs.existsSync(inputPath)) {
-      console.warn(`⚠️ Skipping ${collection}: Missing input JSON`);
+      console.warn(` Skipping ${collection}: Missing input JSON`);
       continue;
     }
 
@@ -44,7 +44,7 @@ const getCollectionFolders = (basePath) =>
       try {
         const pages = await parsePDF(filePath, fs, pdfParse);
 
-        console.log(doc.filename);
+        // console.log(doc.filename);
         for (const page of pages) {
           const embedding = await getEmbedding(page.text.slice(0, 500));
           
@@ -57,9 +57,9 @@ const getCollectionFolders = (basePath) =>
           });
         }
 
-        // console.log(`✅ Parsed ${collection}/${doc.filename}`);
+        console.log(`Parsed ${collection}/${doc.filename}`);
       } catch (err) {
-        console.error(`❌ Failed to parse ${collection}/${doc.filename}: ${err.message}`);
+        console.error(`Failed to parse ${collection}/${doc.filename}: ${err.message}`);
       }
     }
 
