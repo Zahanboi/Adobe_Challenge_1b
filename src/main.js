@@ -13,6 +13,7 @@ const getCollectionFolders = (basePath) =>
   );
 
 (async () => {
+  console.time("processing");
   await loadEmbedder();
 
   const basePath = './data/input';
@@ -43,8 +44,10 @@ const getCollectionFolders = (basePath) =>
       try {
         const pages = await parsePDF(filePath, fs, pdfParse);
 
+        console.log(doc.filename);
         for (const page of pages) {
           const embedding = await getEmbedding(page.text.slice(0, 500));
+          
           allSections.push({
             docName: doc.filename,
             page: page.page,
@@ -54,7 +57,7 @@ const getCollectionFolders = (basePath) =>
           });
         }
 
-        console.log(`✅ Parsed ${collection}/${doc.filename}`);
+        // console.log(`✅ Parsed ${collection}/${doc.filename}`);
       } catch (err) {
         console.error(`❌ Failed to parse ${collection}/${doc.filename}: ${err.message}`);
       }
@@ -69,4 +72,5 @@ const getCollectionFolders = (basePath) =>
       collection
     });
   }
+  console.timeEnd("processing");
 })();

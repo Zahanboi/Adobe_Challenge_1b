@@ -1,9 +1,20 @@
-FROM node:18-slim
+# Use Node.js base image
+FROM node:20-slim
 
+# Set working directory
 WORKDIR /app
-COPY . .
 
-RUN apt update && apt install -y libglib2.0-0 libsm6 libxext6 libxrender1 \
-    && npm install
+# Copy package files
+COPY package.json package-lock.json ./
 
-CMD ["npm", "start"]
+# ✅ Copy local node_modules — assume you ran `npm install` locally
+COPY node_modules/ ./node_modules/
+
+# Copy source files
+COPY src/ ./src/
+
+# Copy data folder (input/output)
+COPY data/ ./data/
+
+# Set the default command
+CMD ["node", "src/main.js"]
