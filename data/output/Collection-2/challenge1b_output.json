@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf",
+      "Learn Acrobat - Request e-signatures_2.pdf",
+      "Learn Acrobat - Share_1.pdf",
+      "Learn Acrobat - Share_2.pdf",
+      "Test Your Acrobat Exporting Skills.pdf",
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "persona": "HR professional",
+    "job_to_be_done": "Create and manage fillable forms for onboarding and compliance.",
+    "processing_timestamp": "2025-07-28T18:28:53.462Z"
+  },
+  "extracted_sections": [
+    {
+      "document": "Learn Acrobat - Export_2.pdf",
+      "section_title": "Export objects to separate PDF ",
+      "importance_rank": 1,
+      "page_number": 3
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "section_title": "Multiple document support in AI Assistant ",
+      "importance_rank": 2,
+      "page_number": 9
+    },
+    {
+      "document": "Learn Acrobat - Export_1.pdf",
+      "section_title": "Convert PDF to PostScript or Encapsulated ",
+      "importance_rank": 3,
+      "page_number": 21
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "section_title": "Convert Visio files to PDF (Acrobat Pro) ",
+      "importance_rank": 4,
+      "page_number": 30
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "section_title": "• Open Acrobat, then select Try it now from the Try AI Assistant onboarding ",
+      "importance_rank": 5,
+      "page_number": 11
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Learn Acrobat - Export_2.pdf",
+      "refined_text": "Export objects to separate PDF \nUsing the Edit Object tool, you can save objects into a separate PDF. \n1. Select All tools > Use print production > Edit object. \n2. Select the object or objects. \n3. Right-click the selection, and choose Save Selection As. \n4. In the Save As dialog, specify where you want to save the file, name the file, and then \nselect Save.",
+      "page_number": 3
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "Multiple document support in AI Assistant \nGenAl Assistant allows users to process up to 10 documents simultaneously, including non-\nPDF formats (.doc, .docx, .rtf, .txt, .ppt, .pptx), each up to 600 pages and 100MB. Users can \nswitch between documents, with responses consolidated from various sources and proper \nattributions. Persistent history support is also included to provide continuous access to \nprevious interactions.",
+      "page_number": 9
+    },
+    {
+      "document": "Learn Acrobat - Export_1.pdf",
+      "refined_text": "Convert PDF to PostScript or Encapsulated \nPostScript (EPS) \nYou can export a PDF to PostScript for printing and prepress applications. The PostScript file \nincludes full DSC (Document Structuring Conventions) comments and other advanced \ninformation preserved by Adobe Acrobat Distiller. You can also create an EPS file from any PDF \nfor placement or opening in other applications. The options available depend on whether \nyou're converting a document to PostScript or EPS. To convert PDF to PS or EPS format: \n1. Open the PDF in Acrobat. \n2. From the global bar, select Convert   . \n3. Select the drop-down menu next to Other format, as required, select EPS or PS.  \n \n4. Select Convert to EPS or Convert to PS. The options will be displayed based on your \nchoice in the previous step.  \n5. In the Save as dialog, select a location where you want to save the file and then \nselect Save. \nNote:  \nIf you create EPS files for separations in Acrobat Pro, all image color spaces should be CMYK.",
+      "page_number": 21
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "refined_text": "Convert Visio files to PDF (Acrobat Pro) \nPDFs created from Visio files preserve page sizes and support layers, searchable text, custom \nproperties, links, bookmarks, and comments, depending on the conversion settings. To specify \nthe properties \n• (Visio 2010) From the ribbon choose Acrobat > Preferences \nWhen you convert your Visio file, only shapes and guides that are printable and visible in the \nVisio drawing are converted and appear in the PDF. Shapes are converted regardless of their \nprotection or behavior. Shape custom properties can be converted to PDF object data. \nWhen you convert the Visio file to a PDF, you can preserve all or just some layers, or you can \nflatten all layers. If you flatten layers, the PDF will look like the original drawing, but won’t \ncontain any layer information. When flattened, the contents of only visible and printable layers \nwill appear in the converted PDF. \n \nConvert Visio files \n1. If you want to change the PDFMaker conversion settings, do the ",
+      "page_number": 30
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "• Open Acrobat, then select Try it now from the Try AI Assistant onboarding \ncard in the home view. Then select the files you want to add and select Next \nfrom the upper right.  \n2. When the file is added, chat displays the number of files added.  \n3. You can enter your question or choose from suggested questions. You get generated \nresponses. If you want to view the references of the generated responses, select the \nreference numbers next to the responses. AI Assistant opens the source file first and \nthen shows you the references. \n4. When you use the assistant with multiple files, a collection of those files is created and \nshown in the Recents tab. You can resume the assistant chat with those files. You can \nrename the collection of those files from the contextual bar (select the ellipsis next to \nthe file name to open the context bar) in the home view.  \nNote: \n• When you open the collection from the Recents tab, the chat resumes from where you \nleft off. \n• When you open any file",
+      "page_number": 11
+    }
+  ]
+}

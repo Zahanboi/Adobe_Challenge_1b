@@ -40,7 +40,7 @@ const getCollectionFolders = (basePath) =>
 
     for (const doc of docs) {
       const filePath = path.join(collectionPath, 'PDFs', doc.filename);
-
+      let currentDocName = doc.filename;
       try {
         const pages = await parsePDF(filePath, fs, pdfParse);
 
@@ -49,7 +49,7 @@ const getCollectionFolders = (basePath) =>
           const embedding = await getEmbedding(page.text.slice(0, 500));
           
           allSections.push({
-            docName: doc.filename,
+            docName: currentDocName,
             page: page.page,
             text: page.text,
             title: page.text.split('\n')[0].slice(0, 80),
